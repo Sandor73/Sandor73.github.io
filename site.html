@@ -1,3 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Осциллограф</title>
+ <a href="https://plotly.com/javascript/" target="_blank" class="plotly-link">Plotly</a>
+ <style>
+    .plotly-link {
+      color: #0000FF;
+      border: 2px solid #0000FF;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .plotly-link:hover {
+      background-color: #F0F8FF;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(35, 84, 162);
+    }
+
+    #graph {
+      width: 99%;
+      height: 520px;
+      border: 5px solid #3d2727;
+      margin-bottom: 20px; /* Добавлено для создания пространства между графиками */
+    }
+ </style>
+</head>
+
+<body>
+ <h1>Осциллограф</h1>
+ <div id="graph"></div>
+
+ <input type="text" id="ipAddress" placeholder="Введите IP-адрес">
+ <button onclick="updateIPAddress()">Обновить IP-адрес</button>
+
+ <script src="https://cdn.plot.ly/plotly-2.29.1.min.js" charset="utf-8"></script>
+
+ <script>
    document.addEventListener('DOMContentLoaded', function () {
     var graphDiv = document.getElementById('graph');
     if (graphDiv) {
@@ -73,4 +117,9 @@
     }
 });
 
+ </script>
+ 
+ </script>
+</body>
 
+</html>
